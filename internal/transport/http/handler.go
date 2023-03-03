@@ -25,4 +25,5 @@ func (h *Handler) SetupRoutes() {
 	h.Router.HandleFunc("/api/health", func(w http.ResponseWriter, r *http.Request) {
 		fmt.Fprintf(w, "I am alive")
 	})
+
 }
